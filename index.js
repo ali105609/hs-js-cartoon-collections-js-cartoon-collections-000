@@ -36,13 +36,36 @@ function findTheCheese (foods) {
   if (foods[i]=="cheddar"
   ||foods[i]=="gouda"
   ||foods[i]=="camembert"
+  ||foods[i]=="swiss"
   ) {
     return foods[i]
   }
   return "no cheese!";
 }
+<<<<<<< HEAD
 
+=======
+return "no cheese!"
+}
+
+
+function wordsThatStartWithB(words){
+  var bLetters = []
+  for(var i=0;i<words.length;i++) {
+  if (words[i][0]==="b"){
+    bLetters.push(words[i])
+  }
+  }
+  return bLetters
+}
+>>>>>>> fed310aca7b5be4486978390b80921ab5e4ed362
  
- 
+ somString[0] === "b" // "b"
+ "banana".startsWith("b") // true
+ "eric".startsWith("b") //false
+  
+ wordsThatStartWithB(['banana', 'cheddar', 'gouda']) // ['banana']
+ wordsThatStartWithB(['bob', 'brian', 'chase']) // ['bob', 'brian']
+ wordsThatStartWithB(['chad', 'james', 'tom']) // []
  
  
